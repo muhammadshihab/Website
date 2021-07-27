@@ -35,7 +35,7 @@
   position: relative;
 }
 
-.navbar ul li ::after{
+.navbar ul li ::after {
   content: '';
   height: 3px;
   width: 0;
@@ -78,6 +78,60 @@
   border-radius: 50%;
   border: 2px solid #009688;
   margin-bottom: -50px;
+  -webkit-animation-name: profile_pic;
+          animation-name: profile_pic;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes profile_pic {
+  0% {
+    left: 0%;
+    right: 0%;
+  }
+  25% {
+    left: 0%;
+    right: 5%;
+  }
+  50% {
+    left: 5%;
+    right: 0%;
+  }
+  75% {
+    left: 5%;
+    right: 0%;
+  }
+  100% {
+    left: 0%;
+    right: 5%;
+  }
+}
+
+@keyframes profile_pic {
+  0% {
+    left: 0%;
+    right: 0%;
+  }
+  25% {
+    left: 0%;
+    right: 5%;
+  }
+  50% {
+    left: 5%;
+    right: 0%;
+  }
+  75% {
+    left: 5%;
+    right: 0%;
+  }
+  100% {
+    left: 0%;
+    right: 5%;
+  }
 }
 
 .content h1 {
@@ -121,11 +175,11 @@
   transition: 0.5s;
 }
 
-.content button:hover{
+.content button :hover {
   border: none;
 }
 
-.content button:hover span{
+.content button :hover span {
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
