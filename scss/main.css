@@ -47,7 +47,7 @@
   transition: 0.5s;
 }
 
-.navbar ul li :hover::after {
+.navbar ul li:hover::after{
   width: 100%;
 }
 
@@ -121,11 +121,11 @@
   transition: 0.5s;
 }
 
-.content button :hover {
+.content button:hover{
   border: none;
 }
 
-.content button :hover span {
+.content button:hover span{
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
